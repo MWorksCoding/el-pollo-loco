@@ -109,7 +109,7 @@ class Endboss extends MovableObject {
     playAnimationAfterHit() {
         if (this.isDead()) {
             this.speed = 0;
-            BACKGROUND_MUSIC_SOUND.pause();
+            sounds.BACKGROUND_MUSIC_SOUND.pause();
             sounds.endboss_dead_sound.play();
             this.playAnimation(this.IMAGES_DEAD);
             sounds.endboss_dead_sound.pause();
